@@ -1,0 +1,5 @@
+* 	 (HEAD -> main, origin/main, origin/HEAD) readme.md completed
+* 	 requirements.txt added
+* 	 code updated in app.py and videos captured and added to Imanes folder
+* 	 initial commit
+* 	 Initial commit
