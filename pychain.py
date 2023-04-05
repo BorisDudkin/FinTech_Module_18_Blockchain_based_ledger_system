@@ -209,9 +209,11 @@ st.markdown("## The PyChain Ledger")
 pychain_df = pd.DataFrame(pychain.chain).astype(str)
 st.write(pychain_df)
 
+# get the difficulty level from user inout
 difficulty = st.sidebar.slider("Block Difficulty", 1, 5, 2)
 pychain.difficulty = difficulty
 
+#display the block
 st.sidebar.write("# Block Inspector")
 selected_block = st.sidebar.selectbox(
     "Which block would you like to see?", pychain.chain
@@ -219,6 +221,7 @@ selected_block = st.sidebar.selectbox(
 
 st.sidebar.write(selected_block)
 
+#validate the blockchain if the button is pressed:
 if st.button("Validate Chain"):
     st.write(pychain.is_valid())
 
